@@ -77,6 +77,12 @@ primeiro acerto.
   estava errada. Se a explicação não fizer sentido para você, pergunte de
   novo.
 
+## Sobre o bug
+
+1. **Índice inicial do loop incorreto:**
+   - **Problema:** Na função `calcularMedia`, o loop `for` começava em `int i = 1` em vez de `int i = 0`. Isso fazia com que a primeira nota de cada aluno (índice 0) fosse ignorada no cálculo da média.
+   - **Correção:** O loop foi alterado para começar em `int i = 0`, garantindo que todas as notas da lista fossem somadas.
+
 ### Checklist
 
 - [ ] A média de todos os alunos está igual à esperada
