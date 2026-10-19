@@ -83,6 +83,10 @@ primeiro acerto.
    - **Problema:** Na função `calcularMedia`, o loop `for` começava em `int i = 1` em vez de `int i = 0`. Isso fazia com que a primeira nota de cada aluno (índice 0) fosse ignorada no cálculo da média.
    - **Correção:** O loop foi alterado para começar em `int i = 0`, garantindo que todas as notas da lista fossem somadas.
 
+2. **Constante de recuperação incorreta:**
+   - **Problema:** A constante `MEDIA_RECUPERACAO` estava definida como `6.5`, enquanto as regras da escola estabelecem que a recuperação é a partir de `5.0`.
+   - **Correção:** O valor da constante `MEDIA_RECUPERACAO` foi alterado para `5.0`.
+
 ### Checklist
 
 - [ ] A média de todos os alunos está igual à esperada
