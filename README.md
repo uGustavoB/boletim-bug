@@ -87,6 +87,10 @@ primeiro acerto.
    - **Problema:** A constante `MEDIA_RECUPERACAO` estava definida como `6.5`, enquanto as regras da escola estabelecem que a recuperação é a partir de `5.0`.
    - **Correção:** O valor da constante `MEDIA_RECUPERACAO` foi alterado para `5.0`.
 
+3. **Operador de comparação estrito na aprovação:**
+   - **Problema:** A função `situacao` usava `media > mediaAprovacao`, o que exigia que a média fosse estritamente maior que 7.0 para aprovação. Alunos com média exatamente 7.0 (como Carla e Diego) eram enviados incorretamente para recuperação.
+   - **Correção:** O operador foi alterado para `media >= mediaAprovacao`, permitindo que alunos com média 7.0 fossem aprovados.
+
 ### Checklist
 
 - [ ] A média de todos os alunos está igual à esperada
